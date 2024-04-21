@@ -8,10 +8,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: black url(assets/background.png) no-repeat scroll;
-  background-size: 100%;
 }
-
 
 .poppins-medium {
   font-family: "Poppins", sans-serif;
@@ -60,7 +57,6 @@ body {
   animation: slideLeft 2s ease-out;
 }
 
-
 @keyframes slideRight {
   from {
     transform: translateX(100%);
@@ -73,5 +69,3 @@ body {
 .animate-slideRight {
   animation: slideRight 2s ease-out;
 }
-
-

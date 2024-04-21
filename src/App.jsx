@@ -1,14 +1,16 @@
-import Article from "./components/article/Article"
-import Header from "./components/header/Header"
-import Section from "./components/section/Section"
+//App.jsx
+import { Route, Routes } from "react-router-dom"
+import MainPage from "./pages/MainPage"
+import Portfolio from "./pages/Portfolio"
 
 function App() {
 
   return (
     <>
-      <Header />
-      <Section />
-      <Article />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
     </>
   )
 }

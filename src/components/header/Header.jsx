@@ -1,13 +1,15 @@
 //Header.jsx
 
+import { NavLink } from "react-router-dom"
+
 const Header = () => {
   return (
-    <div className='ml-[10px] mt-[35px]'>
+    <div className='ml-[10px] pt-8'>
       <header className='header flex justify-between items-center sm:w-[480px] md:w-[720px] xl:w-[1168px] mx-auto'>
         <div className='width-[131.1px] h-[40.07px]'>
-          <a href="/">
-            <h2 className='text-2xl text-white'>LOGO</h2>
-          </a>
+         <NavLink to="/">
+         <h2 className='text-2xl text-white'>LOGO</h2>
+         </NavLink>
         </div>
         <div className='button flex gap-2'>
           <button to="/about" className='bg-black w-[96px] h-[35px] rounded-[8.8px] border-[0.88px] border-[#9A9A9A]'>
