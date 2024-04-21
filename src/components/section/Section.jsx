@@ -8,7 +8,7 @@ const Section = () => {
         <div className='mt-[123px]'>
             <section className='flex flex-col items-center'>
                 <div className='image-container border-b-2 animate-pulse border-b-red-500'>
-                    <img src={Logo} alt='Profile Picture' className='animate-bounce border-2  border-red-600 shadow-lg shadow-red-400 rounded-full sm:w-[231px] md:w-[231px] xl:w-[231px]' />
+                    <img src={Logo} alt='Profile Picture' className='animate-bounce border-2  border-red-600 shadow-2xl shadow-red-400 rounded-full sm:w-[231px] md:w-[231px] xl:w-[231px]' />
                 </div>
                 <div>
                     <h2 className=' text-white poppins-bold text-[63px] mt-5 animate-typing overflow-hidden whitespace-nowrap border-r-4'>M. Emin Subaşı!</h2>
@@ -23,7 +23,7 @@ const Section = () => {
                     <p className='animate-slideLeft text-[#E1E1E1] text-[16px] poppins-medium leading-6 mt-3 text-center'>Passionate Computer Programmer with a focus on MERN, PHP and Flutter development,
                         dedicated to crafting elegant and user-friendly web and mobile applications.</p>
                 </div>
-                <div className="border-[#585858] border rounded-[75px] w-[187px] h-[55px] flex justify-center mt-8 hover:bg-red-400 transition-all hover:cursor-pointer hover:text-black text-white">
+                <div className="border-[#585858] border rounded-[75px] w-[187px] h-[55px] flex justify-center mt-8 hover:bg-red-400 transition-all hover:cursor-pointer hover:text-black hover:shadow-2xl hover:shadow-red-400 text-white hover:border-red-400">
                     <button to="/contact">
                         <p className="e poppins-medium text-base">Contact Me</p>
                     </button>
