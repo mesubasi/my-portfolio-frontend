@@ -7,7 +7,7 @@ const Section = () => {
     return (
         <div className='mt-[123px]'>
             <section className='flex flex-col items-center'>
-                <div className='image-container border-b-2 animate-pulse border-b-red-500'>
+                <div className='image-container border-b-2 animate-pulse border-b-red-400'>
                     <img src={Logo} alt='Profile Picture' className='animate-bounce border-2  border-red-600 shadow-2xl shadow-red-400 rounded-full sm:w-[231px] md:w-[231px] xl:w-[231px]' />
                 </div>
                 <div>
@@ -32,7 +32,7 @@ const Section = () => {
                     <h2 className="inter-extrabold text-white text-5xl tracking-tight">ABOUT ME</h2>
                 </div>
                 <div>
-                    <p className="inter-medium bg-gradient-to-r from-[#9C83FF] to-[#FF9051] text-transparent bg-clip-text text-xs tracking-[.70em]">EXPLORE NOW</p>
+                    <span className="inter-medium bg-gradient-to-r from-violet-500 to-amber-500 inline-block text-transparent bg-clip-text  text-xs tracking-[.70em]">EXPLORE NOW</span>
                 </div>
                 <div className="animate-slideRight w-[706px] min-h-[147px] max-h-max leading-5 mt-5 px-10">
                     <p className="text-[#E1E1E1] text-center inter-medium text-base">
