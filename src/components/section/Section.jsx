@@ -1,4 +1,5 @@
 //Section.jsx
+import { Link } from "react-router-dom"
 import Logo from "../../assets/mes.png"
 
 const Section = () => {
@@ -23,11 +24,13 @@ const Section = () => {
                     <p className='animate-slideLeft text-[#E1E1E1] text-[16px] poppins-medium leading-6 mt-3 text-center'>Passionate Computer Programmer with a focus on MERN, PHP and Flutter development,
                         dedicated to crafting elegant and user-friendly web and mobile applications.</p>
                 </div>
-                <div className="border-[#585858] border rounded-[75px] w-[187px] h-[55px] flex justify-center mt-8 hover:bg-red-400 transition-all hover:cursor-pointer hover:text-black hover:shadow-2xl hover:shadow-red-400 text-white hover:border-red-400">
-                    <button to="/contact">
-                        <p className="e poppins-medium text-base">Contact Me</p>
-                    </button>
-                </div>
+                <Link to="/about">
+                    <div className="border-[#585858] border items-center rounded-[75px] w-[187px] h-[55px] flex justify-center mt-8 hover:bg-red-400 transition-all hover:cursor-pointer hover:text-black hover:shadow-2xl hover:shadow-red-400 text-white hover:border-red-400">
+                        <button>
+                            <p className="e poppins-medium text-base">Contact Me</p>
+                        </button>
+                    </div>
+                </Link>
                 <div className="mt-24">
                     <h2 className="inter-extrabold text-white text-5xl tracking-tight">ABOUT ME</h2>
                 </div>
