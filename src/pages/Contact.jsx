@@ -25,6 +25,20 @@ const About = () => {
           </Link>
         </div>
       </header>
+      <section className='flex justify-center max-w max-h-max mt-20'>
+        <div className='contact-form items-center inline-block border-2 rounded-lg py-10 px-20'>
+          <form action="" method="post" className=''>
+            <input type="text" placeholder='Name Surname' required className='w-56 rounded-sm  border-2 hover:border-blue-500' />
+            <br /><br />
+            <input type="text" placeholder='Mail Address' required className='w-56  rounded-sm' />
+            <br /><br />
+            <textarea name="" id="" cols="30" rows="10" required placeholder='Write Message' className='w-56  rounded-sm'></textarea>
+            <br />
+            <br />
+            <button type="submit" className='w-20 h-10 bg-red-500 rounded-lg text-white'>Submit</button>
+          </form>
+        </div>
+      </section>
     </div>
   )
 }

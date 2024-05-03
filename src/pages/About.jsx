@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Logo from "../assets/logo.png"
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
       <header className='header flex justify-between items-center sm:w-[480px] md:w-[720px] xl:w-[1168px] mx-auto'>
         <div className='width-[131.1px] h-[40.07px]'>
           <Link to="/">
-            <h2 className='text-2xl text-white'>LOGO</h2>
+            <img className="w-20" src={Logo} alt="" />
           </Link>
         </div>
         <div className='button flex gap-2'>

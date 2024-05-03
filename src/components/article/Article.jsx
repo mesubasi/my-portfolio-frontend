@@ -43,13 +43,12 @@ function Article() {
             {item.kullanilanlar && (
               <div className="flex">
                 {item.kullanilanlar.map((kullanilan, index) => (
-                  <div key={index} className="border-[0.5px] border-violet-500 border-r-amber-500 bg-cyan-900 shadow-cyan-600 animate-pulse shadow-sm max-w-fit rounded-[20px] px-6 mt-4 py-2 flex mr-4">
+                  <div key={index} className="border-[0.5px] border-cyan-500 bg-cyan-900 shadow-cyan-600 animate-pulse shadow-sm max-w-fit rounded-[20px] px-6 mt-4 py-2 flex mr-4">
                     <span className="text-[#E1E1E1] inter-small text-sm leading-3">{kullanilan}</span>
                   </div>
                 ))}
               </div>
             )}
-
           </div>
         ))}
       </div>
