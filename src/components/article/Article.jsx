@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from "react";
 import Data from "./Data";
+import Project from "./Project";
 
 function Article() {
   const [datas, setDatas] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
     setDatas(Data);
   }, []);
 
+  useEffect(() => {
+    setProjects(Project);
+  }, [])
+
+
   return (
     <div className="article-wrapper flex justify-center pt-24 pb-16">
       <div className="experience-wrapper mb-8 max-w-[703px]">
         <div className="flex text-white justify-center">
-          <h2 className="font-extrabold text-white text-5xl tracking-tight">EXPERIENCE</h2>
+          <h2 className="font-extrabold text-5xl tracking-tight">EXPERIENCE</h2>
         </div>
         <div className="flex justify-center mt-2">
           <span className="inter-medium bg-gradient-to-r from-violet-500 to-amber-500 inline-block text-transparent bg-clip-text  text-xs tracking-[.70em]">EXPLORE NOW</span>
@@ -51,8 +58,14 @@ function Article() {
             )}
           </div>
         ))}
+        <div className="flex flex-col mt-20 items-center">
+          <h2 className="font-extrabold text-white text-5xl tracking-tight">PROJECTS</h2>
+          <div className="flex justify-center mt-2">
+            <span className="inter-medium bg-gradient-to-r from-violet-500 to-amber-500 inline-block text-transparent bg-clip-text  text-xs tracking-[.70em]">EXPLORE NOW</span>
+          </div>
+        </div>
       </div>
-    </div>
+    </div >
   );
 }
 

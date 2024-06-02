@@ -9,7 +9,7 @@ const Section = () => {
         <div className='mt-[123px]'>
             <section className='flex flex-col items-center'>
                 <div className='image-container border-b-2 animate-pulse border-b-red-400'>
-                    <img src={Logo} alt='Profile Picture' className='animate-bounce border-2  border-red-600 shadow-2xl shadow-red-400 rounded-full sm:w-[231px] md:w-[231px] xl:w-[231px]' />
+                    <img src={Logo} alt='Profile Picture' className='animate-bounce border-2  border-red-600 shadow-2xl shadow-red-400 rounded-full md:w-[231px] w-[250px]' />
                 </div>
                 <div>
                     <h2 className=' text-white poppins-bold text-[63px] mt-5 animate-typing overflow-hidden whitespace-nowrap border-r-4'>M. Emin Subaşı!</h2>
