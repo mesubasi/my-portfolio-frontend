@@ -4,7 +4,7 @@ import React from 'react'
 import { Button, Flex, Form, Input, message } from 'antd';
 import Header from "../components/header/Header";
 
-const About = ({ homeLink, contactLink, pageName, pageNameSecond }) => {
+const About = () => {
   const [form] = Form.useForm();
 
   const onFinish = async (values) => {
@@ -90,7 +90,7 @@ const About = ({ homeLink, contactLink, pageName, pageNameSecond }) => {
               }}
             >
               <Flex gap="small">
-                <Button type="primary" htmlType="submit" >
+                <Button type="primary" htmlType="submit">
                   Submit
                 </Button>
                 <Button danger onClick={() => {
