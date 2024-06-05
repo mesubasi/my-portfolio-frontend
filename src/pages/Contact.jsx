@@ -2,9 +2,9 @@
 
 import React from 'react'
 import { Button, Flex, Form, Input, message } from 'antd';
-import Header from "../components/header/Header"
+import Header from "../components/header/Header";
 
-const About = () => {
+const About = ({ homeLink, contactLink, pageName, pageNameSecond }) => {
   const [form] = Form.useForm();
 
   const onFinish = async (values) => {
@@ -19,6 +19,7 @@ const About = () => {
       message.success("Form Sent Successfully!")
       form.resetFields();
     } catch (error) {
+      message.error("Form Failed to Submit!")
       console.log(error);
     }
   }
@@ -26,7 +27,7 @@ const About = () => {
   return (
     <>
       <div className='fixed inset-0 bg-background bg-black bg-no-repeat bg-right-top bg-local bg-auto'>
-        <Header />
+        <Header firstLink={"/portfolio"} secondLink={"/about"} pageName={"Home"} pageNameSecond={"About"} />
       </div >
       <div className='flex justify-center'>
         <section >
@@ -62,12 +63,9 @@ const About = () => {
               label={<label style={{ color: "white" }}>E-mail</label>}
               rules={[
                 {
-                  type: 'email',
-                  message: 'The input is not valid E-mail!',
-                },
-                {
                   required: true,
-                  message: 'Please input your E-mail!',
+                  message: 'The input is not valid E-mail!',
+                  type: 'email'
                 },
               ]}
             >

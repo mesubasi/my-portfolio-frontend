@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer'
 const Home = () => {
     return (
         <div className='bg-background bg-black bg-no-repeat bg-right-top bg-local bg-auto min-w-max min-h-max'>
-            <Header />
+            <Header firstLink={"/about"} secondLink={"/contact"} pageName={"About Me"} pageNameSecond={"Contact"} />
             <Section />
             <Article />
             <Footer />
