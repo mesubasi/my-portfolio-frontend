@@ -7,12 +7,20 @@ import Header from "../components/header/Header"
 const About = () => {
   const [form] = Form.useForm();
 
-  const handleSubmit = () => {
-    form.validateFields().then(() => {
-      message.success("Your message was sent successfully!")
-    }).catch((error) => {
-      message.error("Please fill out all form fields")
-    })
+  const onFinish = async (values) => {
+    try {
+      const response = await fetch('http://localhost:3480/api/contact/to-send', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json; charset=UTF-8',
+        },
+      });
+      message.success("Form Sent Successfully!")
+      form.resetFields();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   return (
@@ -35,6 +43,7 @@ const About = () => {
             wrapperCol={{
               span: 25,
             }}
+            onFinish={onFinish}
           >
             <Form.Item
               name="namesurname"
@@ -65,7 +74,7 @@ const About = () => {
               <Input />
             </Form.Item>
             <Form.Item
-              name="message"
+              name="description"
               label={<label style={{ color: "white" }}>Message</label>}
               rules={[
                 {
@@ -83,7 +92,7 @@ const About = () => {
               }}
             >
               <Flex gap="small">
-                <Button type="primary" htmlType="submit" onClick={handleSubmit} >
+                <Button type="primary" htmlType="submit" >
                   Submit
                 </Button>
                 <Button danger onClick={() => {
