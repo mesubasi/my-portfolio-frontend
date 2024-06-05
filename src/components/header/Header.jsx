@@ -19,7 +19,7 @@ const Header = () => {
             </button>
           </Link>
           <Link to="/contact">
-            <button to="/contact" className='bg-white w-[96px] h-[35px] rounded-[8.8px] border-[0.88px] border-[#9A9A9A] hover:bg-red-400 hover:cursor-pointer hover:shadow-sm hover:shadow-red-400 transition-all hover:text-white text-black hover:border-red-400'>
+            <button className='bg-white w-[96px] h-[35px] rounded-[8.8px] border-[0.88px] border-[#9A9A9A] hover:bg-red-400 hover:cursor-pointer hover:shadow-sm hover:shadow-red-400 transition-all hover:text-white text-black hover:border-red-400'>
               <p className='text-[13.19px] poppins-medium '>Contact</p>
             </button>
           </Link>
