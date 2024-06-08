@@ -1,6 +1,7 @@
 //Header.jsx
 
 import { Link } from "react-router-dom"
+import Logo from "../../assets/logo.png"
 
 const Header = ({ firstLink, secondLink, pageName, pageNameSecond }) => {
   return (
@@ -8,7 +9,7 @@ const Header = ({ firstLink, secondLink, pageName, pageNameSecond }) => {
       <header className='header flex justify-between items-center sm:w-[480px] md:w-[720px] xl:w-[1168px] mx-auto'>
         <div className='width-[131.1px] h-[40.07px]'>
           <Link to="/">
-            <img className="w-20" src="" alt="Logo" />
+            <img className="w-20" src={Logo} alt="Logo" />
           </Link>
         </div>
         <div className='button flex gap-2'>
