@@ -40,12 +40,6 @@ const Login = () => {
                             <Button type='primary' htmlType='submit' className='w-full' size='large'>Sign In</Button>
                         </Form.Item>
                     </Form>
-                    <div className='flex justify-center absolute left-0 bottom-10 w-full'>
-                        Don't have an account yet? &nbsp;
-                        <Link to="/register" className='text-blue-600'>
-                            Register Now
-                        </Link>
-                    </div>
                 </div>
                 <div className='xl:w-4/6 lg:w-3/5 md:w-1/2 md:flex hidden bg-[#6c63ff]'>
                     <div className='w-full h-full flex items-center'>
@@ -53,7 +47,6 @@ const Login = () => {
                             <Carousel className='!h-full px-6' autoplay autoplaySpeed={3000}>
                                 <AuthCarousel img="/images/responsive.svg" title="Responsive" desc="Compatibility with All Device Sizes" />
                                 <AuthCarousel img="/images/statistic.svg" title="Statistics" desc="Expanded Statistics" />
-                                <AuthCarousel img="/images/customer.svg" title="Customer Satisfaction" desc="Customers Satisfied with the Product at the End of the Experience" />
                                 <AuthCarousel img="/images/admin.svg" title="Admin Panel" desc="One-Stop Management" />
                             </Carousel>
                         </div>
