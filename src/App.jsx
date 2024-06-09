@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage"
 import Portfolio from "./pages/Portfolio"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import Login from "./pages/auth/Login"
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   )
