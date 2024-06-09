@@ -3,6 +3,7 @@
 import { Button, Form, Input, Carousel, Checkbox } from 'antd'
 import { Link } from 'react-router-dom'
 import AuthCarousel from '../../components/auth/AuthCarousel';
+import DLogo from "../../assets/dlogo.png"
 
 const Login = () => {
     const contentStyle = {
@@ -17,7 +18,7 @@ const Login = () => {
         <div className='h-screen'>
             <div className='flex justify-between h-full'>
                 <div className='xl:px-20 px-10 w-full flex flex-col h-full justify-center relative'>
-                    <h1 className='text-center text-5xl font-bold mb-2'>LOGO</h1>
+                    <img className='-mt-28 -mb-20 md:-mt-20 md:-mb-20' src={DLogo} alt="MES Logo" />
                     <Form layout='vertical' size='large'>
                         <Form.Item label="Email" name={"email"} rules={[{ required: true, message: "Email Cannot Be Blank!" }]}>
                             <Input />
