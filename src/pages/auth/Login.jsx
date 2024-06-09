@@ -2,6 +2,7 @@
 
 import { Button, Form, Input, Carousel, Checkbox } from 'antd'
 import { Link } from 'react-router-dom'
+import AuthCarousel from '../../components/auth/AuthCarousel';
 
 const Login = () => {
     const contentStyle = {
@@ -48,7 +49,12 @@ const Login = () => {
                 <div className='xl:w-4/6 lg:w-3/5 md:w-1/2 md:flex hidden bg-[#6c63ff]'>
                     <div className='w-full h-full flex items-center'>
                         <div className='w-full'>
-
+                            <Carousel className='!h-full px-6' autoplay autoplaySpeed={3000}>
+                                <AuthCarousel img="/images/responsive.svg" title="Responsive" desc="Compatibility with All Device Sizes" />
+                                <AuthCarousel img="/images/statistic.svg" title="Statistics" desc="Expanded Statistics" />
+                                <AuthCarousel img="/images/customer.svg" title="Customer Satisfaction" desc="Customers Satisfied with the Product at the End of the Experience" />
+                                <AuthCarousel img="/images/admin.svg" title="Admin Panel" desc="One-Stop Management" />
+                            </Carousel>
                         </div>
                     </div>
                 </div>
