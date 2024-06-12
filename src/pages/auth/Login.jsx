@@ -26,16 +26,6 @@ const Login = () => {
                         <Form.Item label="Password" name={"password"} rules={[{ required: true, message: "Password Cannot Be Blank!" }]}>
                             <Input.Password />
                         </Form.Item>
-                        <Form.Item name={"remember"} valuePropName='checked'>
-                            <div className='flex justify-between items-center'>
-                                <Checkbox>
-                                    Remember Me
-                                </Checkbox>
-                                <Link>
-                                    Forgot Password?
-                                </Link>
-                            </div>
-                        </Form.Item>
                         <Form.Item>
                             <Button type='primary' htmlType='submit' className='w-full' size='large'>Sign In</Button>
                         </Form.Item>
