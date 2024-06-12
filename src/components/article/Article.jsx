@@ -58,25 +58,26 @@ function Article() {
               )}
             </div>
           ))}
-
           <div className="flex flex-col mt-20 items-center">
             <h2 className="font-extrabold text-white text-5xl tracking-tight">PROJECTS</h2>
             <div className="flex justify-center mt-2">
               <span className="inter-medium bg-gradient-to-r from-violet-500 to-amber-500 inline-block text-transparent bg-clip-text  text-xs tracking-[.70em]">EXPLORE NOW</span>
             </div>
-            {projects.map((project, key) => (
-              <div className="flex grid-cols-4 pt-16 h-full" key={key}>
-                <img className="rounded-lg w-32" src={project.projectImg} alt="" />
-                <div className="flex flex-wrap">
-                  <div className="text-white ml-2 inter-medium !font-extrabold text-2xl">
-                    {project.projectName}
-                  </div>
-                  <div className="inter-medium text-[#878787] text-xs -mt-10">
-                    {project.projectDescription}
+            <div className="pt-16 h-full grid grid-cols-2 gap-6">
+              {projects.map((project, key) => (
+                <div className="flex mb-6" key={key}>
+                  <img className="rounded-2xl w-20" src={project.projectImg} alt="Project Image" />
+                  <div className="flex flex-wrap ml-6">
+                    <div className="text-white font-extrabold text-2xl">
+                      {project.projectName}
+                    </div>
+                    <div className="text-[#878787] text-xs -mt-1">
+                      {project.projectDescription}
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
       </div >
