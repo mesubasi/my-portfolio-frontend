@@ -20,7 +20,7 @@ const Footer = () => {
                     <p className="text-white inter-medium text-[10px] leading-3 text-center">Loosely designed in Figma and coded in Visual Studio Code by yours truly. Built with React.js <br />
                         and Tailwind CSS, deployed with Vercel. All text is set in the Inter typeface.</p>
                 </div>
-            </div>e
+            </div>
         </>
     )
 }

@@ -87,12 +87,11 @@ const About = () => {
               </Form.Item>
 
               <Form.Item>
-                <Flex gap="small">
-
-                  <Button type="primary" htmlType="submit" style={{ width: "25%" }}>
-                    <FaChevronRight className='text-white'><span className='text-white'>Send</span></FaChevronRight>
+                <div className="flex justify-end gap-4">
+                  <Button type="primary" htmlType="submit" className='w-20 h-10 flex justify-center items-center bg-primary'>
+                    <FaChevronRight className='flex' />
                   </Button>
-                </Flex>
+                </div>
               </Form.Item>
             </Form>
           </section >
